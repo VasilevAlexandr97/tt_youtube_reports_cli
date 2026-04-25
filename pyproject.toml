@@ -1,0 +1,23 @@
+[project]
+name = "tt-youtube-reports-cli"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
+    "tabulate>=0.10.0",
+]
+
+[dependency-groups]
+dev = ["ruff>=0.15.11", "ty>=0.0.32"]
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project.scripts]
+cli = "report_cli.cli:main"
